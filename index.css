@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 20px 0;
+}
+
+
+.container{
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.n-main{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.n-center {
+    
+    display: flex;
+    align-items: center;
+    gap: 72px;
+   a{
+    text-decoration: none;
+    color: #292929;
+    font-size: 20px;
+   }
+}
+
+.n-right{
+    gap: 30px;
+    display: flex;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        font-size: 20px;
+   margin-top: 10px;
+    }
+
+
+    button{
+        border-radius: 4px;
+        border: 1px solid #01996D;
+width: 100px;
+height: 40px;
+background-color: #01996D;
+color: white;
+font-size: 15px;
+font-weight: 400;
+
+}
+}
+
+header{
+width: 100%;
+height: 100vh;
+background: url("images/header.png") 
+no-repeat center center / cover;
+
+
+}
+
+.h-main{
+
+    h1{
+        font-weight: 700;
+        font-size: 65px;
+        color: #01996D;
+    }
+    p{
+        font-weight: 400;
+        font-size: 20px;
+        color: #484848;
+    }
+
+    button{
+        border-radius: 4px;
+        border: 1px solid #01996D;
+width: 130px;
+height: 40px;
+background-color: #01996D;
+color: white;
+font-size: 15px;
+font-weight: 400;
+    }
+}
+
+.bg{
+padding-top: 250px;
+}
+
+
+aside{
+margin: 169px;
+ height: 227px;
+
+
+}
+.a-main{
+display: flex;
+align-items: center;
+justify-content: space-between;
+    h1{
+        font-weight: 700;
+        font-size: 50px;
+        color: #01996D;
+    }
+
+
+}
+
+.a-right p{
+font-weight: 500;
+font-size: 20px;
+color: #424243;
+
+}
+
+.card{
+
+
+
+
+
+    width: 390px;
+    height:937px;
+    text-align: center;
+
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+    }
+    p{
+        font-weight: 500;
+        font-size: 17px;
+        color: #424242;
+    }
+    img{
+width: 80%;
+
+}
+}
+
+
+.cards{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+
+}
+
+.past{
+ margin-top: 300px;
+}
+
+.f-last{
+    width: 100%;
+overflow: scroll;
+}
+
+.s-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-left{
+    img{
+        margin: 40px;
+    }
+}
+
+.rasm{
+img{
+width: 200px;
+margin-top: -300px;
+box-shadow: 0px 3.62px 18.11px 0px #A5A5A540;
+
+}
+    }
+
+    .s-right{
+        h1{
+            font-weight: 700;
+            font-size: 50px;
+            color: #01996D;
+        }
+        p{
+            font-weight: 500;
+            font-size: 17px;
+            color: #484848;
+        }
+
+        button{
+            border-radius: 4px;
+            border: 1px solid #01996D;
+    width: 130px;
+    height: 40px;
+    background-color: #01996D;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+        }
+    }
+
+
+    footer{
+
+padding: 100px;
+        width: 100%;
+   height: 454px;
+        background-color:#245852;
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 768px) {
+        .n-center {
+            gap: 20px;
+        }
+    
+        .n-right {
+            gap: 20px;
+        }
+    
+        .n-main {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .n-center a {
+            font-size: 18px;
+        }
+    
+        .n-right a {
+            font-size: 18px;
+        }
+    
+        .n-right button {
+            width: 80px;
+            height: 35px;
+        }
+    
+        .h-main h1 {
+            font-size: 40px;
+        }
+    
+        .h-main p {
+            font-size: 18px;
+        }
+    
+        .card {
+            width: 90%;
+            margin: 10px auto;
+        }
+    
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    
+        .s-main {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .s-left img {
+            margin: 20px;
+        }
+    
+        footer {
+            padding: 40px;
+        }
+    
+        .s-right h1 {
+            font-size: 35px;
+        }
+    
+        .s-right p {
+            font-size: 16px;
+        }
+    }
+    
+    /* For screens between 768px and 1024px (typically tablets in portrait mode) */
+    @media screen and (max-width: 1024px) and (min-width: 768px) {
+        .n-center {
+            gap: 50px;
+        }
+    
+        .n-main {
+            flex-direction: row;
+            text-align: left;
+        }
+    
+        .n-right a {
+            font-size: 18px;
+        }
+    
+        .n-right button {
+            width: 100px;
+            height: 40px;
+        }
+    
+        .h-main h1 {
+            font-size: 55px;
+        }
+    
+        .h-main p {
+            font-size: 18px;
+        }
+    
+        .card {
+            width: 80%;
+            margin: 10px auto;
+        }
+    
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .s-main {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .s-left img {
+            margin: 20px;
+        }
+    
+        .s-right h1 {
+            font-size: 45px;
+        }
+    
+        .s-right p {
+            font-size: 17px;
+        }
+    }
+    
+    /* For screens larger than 1024px (typically desktops and laptops) */
+    @media screen and (min-width: 1024px) {
+        .n-main {
+            justify-content: space-between;
+        }
+    
+        .n-center {
+            gap: 72px;
+        }
+    
+        .s-main {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    
+        .card {
+            width: 390px;
+            margin: 10px;
+        }
+    
+        footer {
+            padding: 100px;
+        }
+    
+        .s-right h1 {
+            font-size: 50px;
+        }
+    
+        .s-right p {
+            font-size: 17px;
+        }
+    }
